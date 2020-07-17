@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 import axios from "axios";
-import "./PizzaForm.css"
+import "./PizzaForm.css";
 
 const formSchema = yup.object().shape({
-  name: yup.string().required("Name is a required field").min(2, "There is a two character minimum"),
-  sizes: yup.string().required("You must pick a size"),
+  name: yup
+    .string()
+    .required("Name is a required field.")
+    .min(2, "Name must be at least two characters long."),
+  sizes: yup.string().required("You must pick a size."),
   pepperoni: yup.boolean().oneOf([true]),
   jalapenos: yup.boolean().oneOf([true]),
   mushrooms: yup.boolean().oneOf([true]),
@@ -68,7 +71,7 @@ function PizzaForm(props) {
       })
       .catch((err) => console.log(err));
   };
-  // console.log(addPizza)
+
   return (
     <form className="pizza-form" onSubmit={formSubmit}>
       <div className="home-button">
@@ -97,7 +100,6 @@ function PizzaForm(props) {
         Size:
         <br></br>
         <select name="sizes" id="sizes" onChange={inputChange}>
-          <option value="">--Please choose an option--</option>
           <option value="Small">Small</option>
           <option value="Medium">Medium</option>
           <option value="Large">Large</option>
@@ -106,7 +108,7 @@ function PizzaForm(props) {
       </label>
       <br></br>
       <label>Toppings:</label>
-      <br></br>
+      {/* <br></br> */}
       <label htmlFor="pepperoni">
         <input
           type="checkbox"
@@ -148,7 +150,7 @@ function PizzaForm(props) {
         Olives
       </label>
       <br></br>
-      <br></br>
+
       <label htmlFor="instructions">
         Special Instructions?
         <br></br>
