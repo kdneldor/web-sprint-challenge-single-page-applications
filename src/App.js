@@ -1,11 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import PizzaForm from "./PizzaForm";
+import Home from "./Home"
+
+
 
 const App = () => {
+  const [pizzas, setPizzas] = useState([])
+  const addPizza = (pizza) => {
+    setPizzas([...pizzas, pizza])
+  }
   return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
+    <div>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/pizza">
+        <PizzaForm addPizza={addPizza} order={pizzas} />
+      </Route>
+    </div>
   );
 };
 export default App;
