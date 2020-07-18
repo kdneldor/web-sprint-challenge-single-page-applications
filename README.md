@@ -31,40 +31,48 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
+
+    "useRouteMatch is useful when using <Route> so that you can get access to the match data, including the times you might render any given <Route> by itself. 
+
 1. How would you explain form validation to someone who has never programmed before?
+
+    "Form validation is a process in which we set up certain requirements for each element of the form. If any of the paramaters are not met the user will be met with a notifcation that the data is required and the form is not valid."
+
 1. In 1-2 sentences, define end to end testing.
+
+    "End to end testing is the process of simulating the user experience and making sure that all of the UI functions properly. This attempts to solidify that the user can accomplish any action."
 
 ## Instructions
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: `git push origin <firstName-lastName>`
+- [ x] Create a forked copy of this project
+- [ x] Add your team lead as collaborator on Github
+- [ x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [ x] Create a new branch: `git checkout -b <firstName-lastName>`
+- [ x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [ x] Push commits: `git push origin <firstName-lastName>`
 
 ### Task 2: Project Requirements
 
 Your finished project must include all of the following requirements:
 
-- [ ] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable)
-- [ ] A form with a "/pizza" route
-- [ ] A name text input field
-- [ ] Validation for name - name must be at least 2 characters
-- [ ] A dropdown for pizza size
-- [ ] A checklist for toppings - at least 4 (hint: name each separately!)
-- [ ] Text input for special instructions
-- [ ] An Add to Order button that submits form and returns a database record of name, size, toppings and special instructions
+- [ x] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable)
+- [ x] A form with a "/pizza" route
+- [ x] A name text input field
+- [ x] Validation for name - name must be at least 2 characters
+- [ x] A dropdown for pizza size
+- [ x] A checklist for toppings - at least 4 (hint: name each separately!)
+- [ x] Text input for special instructions
+- [ x] An Add to Order button that submits form and returns a database record of name, size, toppings and special instructions
 
 #### Testing MVP
 
 Implement the following tests in Cypress:
 
-- [ ] test that you can add text to the box
-- [ ] test that you can select multiple toppings
-- [ ] test that you can submit the form
+- [ x] test that you can add text to the box
+- [ x] test that you can select multiple toppings
+- [ x] test that you can submit the form
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -92,6 +100,6 @@ One of your goals is to return a database record of the order - for this you'll 
 
 Follow these steps for completing your project.
 
-- [ ] Submit a pull request to merge `<firstName-lastName>` branch into the `main` branch (student's repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull request
-- [ ] Your team lead will count the project as complete after receiving your pull request
+- [ x] Submit a pull request to merge `<firstName-lastName>` branch into the `main` branch (student's repo). **Please don't merge your own pull request**
+- [ x] Add your team lead as a reviewer on the pull request
+- [ x] Your team lead will count the project as complete after receiving your pull request
